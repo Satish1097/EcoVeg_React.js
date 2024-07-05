@@ -9,7 +9,7 @@ function Product() {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/products/')
+    axios.get('http://127.0.0.1:8000/product/')
       .then(response => {
         setItems(response.data);
         console.log(items)

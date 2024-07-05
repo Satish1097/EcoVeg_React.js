@@ -10,7 +10,7 @@ import './Nav.css'
 function Nav() {
   const[Category,SetCategory]=useState([]);
   useEffect(()=>{
-    axios.get('http://127.0.0.1:8000/categories/')
+    axios.get('http://127.0.0.1:8000/category/')
     .then(response => {
       SetCategory(response.data);
     })
